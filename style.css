@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.container {
+  background-image: url("pics/purple_pink_sky_moon_stars.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+
+.top {
+  display: flex;
+  justify-content: end;
+}
+
+a {
+  color: white;
+  display: flex;
+  justify-content: left;
+  margin: 15px 30px;
+  font-size: 19px;
+}
+
+.mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  flex-grow: 5;
+}
+
+h1
+{
+  position: relative;
+  left: 1%;
+}
+
+.load-bar {
+  width: 70vw;
+  min-width: 500px;
+  /* height: 10px; */
+  background-color: #f8eeeda7;
+  /* border: 1px solid #f8eeed06; */
+  margin-top: 31px;
+  border-radius: 7px;
+  box-shadow: 0px 0px 10px rgba(249, 227, 225);
+}
+
+.load-fill {
+  width: 85%;
+  height: 22px;
+  background-color: rgb(249, 40, 151);
+  box-shadow: 0px 0px 10px deeppink;
+  border-radius: 7px;
+}
+
+.loadnum {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  width: 70vw;
+}
+
+h1 {
+  letter-spacing: 17px;
+  padding: 7px;
+  font-size: 44px;
+  /*padding-left: 20px;*/ /*The word "U N D E R" was quite off centered once I see the whole pic. Sus it's the letter spacing, so adding left margin to buffer that*/
+}
+
+h3 {
+  margin-bottom: 25px;
+  word-spacing: 6px;
+}
+
+.notify {
+  background-color: #9b7fc4;
+  font-size: 16px;
+  opacity: 0.6;
+  color: rgb(33, 4, 53);
+  border-color: #9b7fc4;
+  border-radius: 10px;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+/*ChatGPT helped me come up with this idea*/
+.notify:hover {
+  background-color: rgb(33, 4, 53);
+  color: white;
+  border: 2px solid #9b7fc4;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.bottom > p {
+  margin-bottom: 5px;
+}
+
+.social {
+  font-size: 21px;
+  color: deeppink;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  gap: 33px;
+}
+
+.social > i {
+  display: flex;
+  width: 33px;
+  height: 33px;
+  border: 1.5px solid deeppink;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+/*ChatGPT helped me come up with this idea*/
+.social > i:hover {
+  background-color: deeppink;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+hr.low-bar {
+  width: 89vw;
+  height: 2px;
+  border: 1px solid white;
+  margin-bottom: 3px;
+  opacity: 0.5;
+}
